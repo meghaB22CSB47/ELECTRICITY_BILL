@@ -1,0 +1,104 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#complaint-container {
+    width: 90%;
+    max-width: 900px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #004d40;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #00796b;
+    color: white;
+}
+
+table td {
+    background-color: #f9f9f9;
+}
+
+button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-grow: 1; /* Makes buttons the same width */
+    transition: background-color 0.3s, transform 0.3s; /* Animation */
+}
+
+.submit-btn {
+    background-color: #388e3c;
+    color: white;
+}
+
+.cancel-btn {
+    background-color: #d32f2f;
+    color: white;
+}
+
+.back-btn {
+    background-color: #1976d2;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.button-group {
+    display: flex;
+    margin-top: 20px; /* Add margin for spacing */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.status-message {
+    margin-top: 20px;
+    padding: 10px;
+    color: #fff;
+    background-color: #388e3c;
+    border-radius: 5px;
+    animation: fadeIn 1s ease-in-out; /* Fade in effect */
+}
+
+#complaint-details p {
+    margin: 10px 0;
+}
